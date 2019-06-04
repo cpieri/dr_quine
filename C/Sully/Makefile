@@ -6,7 +6,7 @@
 #    By: cpieri <cpieri@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/15 11:20:25 by cpieri            #+#    #+#              #
-#    Updated: 2019/05/31 12:44:01 by cpieri           ###   ########.fr        #
+#    Updated: 2019/06/04 14:49:28 by cpieri           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,7 +56,7 @@ clean:
 
 fclean:		clean
 			@/bin/rm -f $(NAME)
-			@/bin/rm -f Sully_*
+			@/bin/rm -f Sully_* 2> /dev/null || true
 			@echo "$(RED)$(NAME) deleted !$(NONE)"
 
 re:			fclean all

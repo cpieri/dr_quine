@@ -6,7 +6,7 @@
 #    By: cpieri <cpieri@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/31 14:31:44 by cpieri            #+#    #+#              #
-#    Updated: 2019/06/03 15:45:51 by cpieri           ###   ########.fr        #
+#    Updated: 2019/06/04 14:49:18 by cpieri           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,7 +58,7 @@ clean:
 
 fclean:		clean
 			@/bin/rm -f $(NAME)
-			@/bin/rm Grace_kid.s
+			@/bin/rm Grace_kid.s 2> /dev/null || true
 			@echo "$(RED)$(NAME) deleted !$(NONE)"
 
 re:			fclean all
